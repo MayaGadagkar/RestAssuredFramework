@@ -42,7 +42,7 @@ public class UpdateBookingTest extends BaseTest {
 	.spec(ResponseSpecificationBuilder.buildResponseSpecification(200));
 	
 	BookingData bookingdata = response.as(BookingData.class);
-	System.out.println("The FirstName is :" +bookingdata.getFirstname());
+	System.out.println("The FirstName is:" +bookingdata.getFirstname());
 	Assert.assertEquals(bookingdata.getFirstname(), bookingPayLoad.getFirstname());
 	Assert.assertEquals(bookingdata.getLastname(), bookingPayLoad.getLastname());
 	Assert.assertEquals(bookingdata.getBookingdates().getCheckout(), bookingPayLoad.getBookingdates().getCheckout());
