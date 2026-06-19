@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RestAssured API Suite">
+
+    <test name="Booking API Tests">
+
+        <classes>
+
+            <class name="tests.CreateBookingTest"/>
+            <class name="tests.GetBookingsTest"/>
+            <class name="tests.UpdateBookingTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
